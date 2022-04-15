@@ -17,4 +17,9 @@ for (let i = 0; i < circles.length; i++) {
     circles[i].addEventListener("click", function(e) {
     circles[i].classList.toggle('active');
     });
+
+    circles[i].addEventListener('click', (event) => {
+        event.preventDefault();
+    });
 }
+
